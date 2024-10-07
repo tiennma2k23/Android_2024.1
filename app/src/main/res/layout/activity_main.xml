@@ -1,36 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- TextView for displaying the result -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday to Me!"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="48sp"
+        android:padding="16dp"
+        android:background="#E0E0E0" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Created by Nguyễn Minh Tiến 20224902"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- First Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="CE"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="C"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="BS"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="/"/>
+    </LinearLayout>
+
+    <!-- Second Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="7"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="8"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="9"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="x"/>
+    </LinearLayout>
+
+    <!-- Third Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="4"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="5"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="6"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="-"/>
+    </LinearLayout>
+
+    <!-- Fourth Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="1"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="2"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="3"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="+"/>
+    </LinearLayout>
+
+    <!-- Fifth Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="+/-"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="0"/>
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="="/>
+    </LinearLayout>
+
+</LinearLayout>

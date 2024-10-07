@@ -13,5 +13,6 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Happy Birthday</string>
+    <string name="app_name">Calculator_LinearLayout
+</string>
 </resources>
