@@ -13,6 +13,6 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Calculator_LinearLayout
+    <string name="app_name">Calculator_ConstraintLayout
 </string>
 </resources>
